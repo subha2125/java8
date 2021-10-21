@@ -9,9 +9,6 @@ public class NumbersAverage {
         List<Integer> numbers = Arrays.asList(8, 3, 4, 1, 7, 3);
         IntSummaryStatistics summaryStatistics=numbers.stream().mapToInt((x)->x).summaryStatistics();
         System.out.println(summaryStatistics.getAverage());
-        
-        double avg = numbers.stream().mapToDouble(x -> x).average().getAsDouble();
-        System.out.println("\nAverage= "+avg);
 
     }
 }

@@ -10,7 +10,7 @@ public class StringCount {
         long charCount = someString.chars().filter(ch -> ch == 'e').count();
         System.out.println(charCount);
 
-        List<String> strings= Arrays.asList("abc","def","ghi","jklm","","","");
+        List<String> strings= Arrays.asList("abc","def","ghi","jklm","","");
         long count=strings.stream().filter(String->String.isEmpty()).count();
         System.out.println(count);
 
